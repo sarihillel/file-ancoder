@@ -1,15 +1,15 @@
 # file-encoder assigment
 
-Project Language/Tools:<br />
+**Project Language/Tools:**<br />
 Java 11<br />
 Maven 4.0.0<br />
 Spring Boot 2.5.12<br />
 Junit 5<br />
 
-Requirments:<br />
+**Requirments:**<br />
 encode / decode file by chunks of 1024 bytes to SHA-256 hash that concat to the prev chunk.<br />
 
-Exceution:<br />
+**Exceution:**<br />
 the project contains 4 services:<br />
 
    * FileEncoder - read from input file by chunks,generate hash by SHA-256 and write to output file.<br />
@@ -22,6 +22,6 @@ the project contains 4 services:<br />
 
    * HexConverter - convert from\to Hex String.<br />
 
-Unit Testing:<br />
+**Unit Testing**:<br />
 the project's tests written by JUnit.<br />
 The tests include multiple options of Junit include using an option of TemporaryFolder for genataring temporary files.<br />
