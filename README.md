@@ -1,27 +1,27 @@
 # file-encoder assigment
 
-Project Language/Tools:
-Java
-Maven
-Spring Boot
-Junit
+Project Language/Tools:_
+Java 11_
+Maven 4.0.0_
+Spring Boot 2.5.12_
+Junit 5_
 
-Requirments: 
-encode / decode file by chunks of 1024 bytes to SHA-256 hash that concat to the prev chunk.
+Requirments:_ 
+encode / decode file by chunks of 1024 bytes to SHA-256 hash that concat to the prev chunk._
 
-Exceution:
-the project contains 4 services:
+Exceution:_
+the project contains 4 services:_
 
-   * FileEncoder - read from input file by chunks,generate hash by SHA-256 and write to output file.
-     The Reading and writing uses by RandomAccessFile with specific pointer to current chunk position in order to enable reading big files effectivitlly.
-     The service calculate the new size of output file and writes every chunk and hash exactly to the relevat poisition.
+   * FileEncoder - read from input file by chunks,generate hash by SHA-256 and write to output file._
+                   The Reading and writing uses by RandomAccessFile with specific pointer to current chunk position in order to enable reading big files effectivitlly._
+                   The service calculate the new size of output file and writes every chunk and hash exactly to the relevat poisition._
 
-   * FileDecoder - encrypt file by hash of first chunck. this service return boolean result for valiv\invalid file.
+   * FileDecoder - encrypt file by hash of first chunck. this service return boolean result for valiv\invalid file._
 
-   * HashGenerator - generate SHA-256 hashing.
+   * HashGenerator - generate SHA-256 hashing._
 
-   * HexConverter - convert from\to Hex String.
+   * HexConverter - convert from\to Hex String._
 
-Unit Testing:
-the project's tests written by JUnit.
-The tests include multiple options of Junit include using an option of TemporaryFolder for genataring temporary files.
+Unit Testing:_
+the project's tests written by JUnit._
+The tests include multiple options of Junit include using an option of TemporaryFolder for genataring temporary files._
