@@ -1,10 +1,10 @@
 # file-encoder assigment
 
-Project Language/Tools:_
-Java 11_
-Maven 4.0.0_
-Spring Boot 2.5.12_
-Junit 5_
+Project Language/Tools:__
+Java 11__
+Maven 4.0.0__
+Spring Boot 2.5.12__
+Junit 5__
 
 Requirments:_ 
 encode / decode file by chunks of 1024 bytes to SHA-256 hash that concat to the prev chunk._
